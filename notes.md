@@ -32,6 +32,9 @@ Wed 27 Jun 2018 05:35:31 PM -03
 - Parece que la denominacion de empresa aporta bastante. Voy a probar volver a poner todas las denominaciones (recientemente habia sacado todas las 'injunables')
     - [ x ] Logre 0.78 incluyendo todas las empresas.
     - [ x ] Logre el mismo 0.78 incluyendo todas las categorias.
+Wed 27 Jun 2018 06:29:29 PM -03
+- Con un entrenamiento del 0.75 y las denominaciones de empresa ordenadas, volvi a llegar a un 0.82. phew.
+    - Creo que esto es mejorable mediante grid search
 
 # TODO informe
 - [  ] Rehacer gráficos
