@@ -47,3 +47,14 @@ No, no puedo.
 
 Un problema con el que me topé fue que al procesar los datos para formar la predicción, aproximadamente el 40% de los postulantes faltaban.
 Esto se solucionó al usar también los archivos de genero y edad de postulantes del set de entrenamiento
+
+## Approach random forest
+
+Al armar un set de entrenamiento mergeando los anuncios y los postulantes por el archivo de vistas, le di al modelo el bias de que ya todas las postulaciones eran a anuncios que ya habian sido vistos.
+Si puedo mantener esta asunción, debería obtener una mejoría en rendimiento marcando como 'no se postuló' todos los anuncios que no fueron vistos, y luego usar el modelo de random forest para el resto.
+
+![](https://i.imgur.com/Oy8yabL.png)
+
+Parece que solo el 66% de los anuncios que tienen postulaciones fueron vistos previamente
+
+Voy a probar generar un set de entrenamiento con proporciones parecidas
