@@ -29,7 +29,6 @@ O mediante vistas:
 
 ![alt text](https://i.imgur.com/8w3ePwB.png)
 
-
 ## Exploración sobre los datos de predicción
 Vistas en los datos a predecir:
 
@@ -56,5 +55,15 @@ Si puedo mantener esta asunción, debería obtener una mejoría en rendimiento m
 ![](https://i.imgur.com/Oy8yabL.png)
 
 Parece que solo el 66% de los anuncios que tienen postulaciones fueron vistos previamente
-
 Voy a probar generar un set de entrenamiento con proporciones parecidas
+
+A falta de un criterio en base al cual agregar anuncios por fuera de los vistos, pruebo otros approaches:
+
+### Variación de hiperparámetros
+Usé grid search para buscar hiperparámetros, y obtuve resultados variados, pero en todos los casos sigue sin superar el bias descripto en el comienzo de la sección
+Por ejemplo, logré mejorar una predicción de 0.82 a 0.879 usando los hiperparámetros: `{'max_features': 0.75, 'min_samples_leaf': 12, 'n_estimators': 10}`
+
+Con los parámetros por defecto, logré mejor performance a medida que más variables categóricas ordenadas eran reemplazadas por sus códigos ordenados.
+Por ejemplo, aportó mejoras ordenar los trabajos de menos a más fijo, con 'full time' con el código máximo o las denominaciones de empresa con códigos ascendentes según qué tantos anuncios tenía la misma.
+
+

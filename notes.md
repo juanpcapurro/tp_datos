@@ -42,7 +42,7 @@ Wed 27 Jun 2018 06:29:29 PM -03
     - [ x ] Zonas de trabajo
 - [  ] Hacer nuevos graficos
     - [  ] Denominacion empresa y densidad de anuncios
-    - [  ] Diagrama de venn de quien vio que anuncio, y quien se postulo a que anuncio
+    - [ x ] Diagrama de venn de quien vio que anuncio, y quien se postulo a que anuncio
 - [  ] Hablar de random forest
-    - [  ] Grid search
+    - [ x ] Grid search
     - [  ] Performance sacando variables categóricas
